@@ -1,9 +1,11 @@
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from blockchain.blockchain import Blockchain
 from blockchain.voto import Voto
 from blockchain.eleitor import ControleEleitores
 
 app = Flask(__name__)
+CORS(app)
 
 blockchain = Blockchain()
 controle = ControleEleitores()
