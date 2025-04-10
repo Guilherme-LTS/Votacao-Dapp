@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Votação DApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Votação Descentralizado</h1>
+    
+    <div class="form">
+      <input type="text" id="eleitor_id" placeholder="Seu ID de Eleitor">
+      <select id="candidato">
+        <option value="Candidato A">Candidato A</option>
+        <option value="Candidato B">Candidato B</option>
+        <option value="Candidato C">Candidato C</option>
+      </select>
+      <button onclick="votar()">Votar</button>
+    </div>
+
+    <button onclick="minerar()">Minerar Bloco</button>
+    <button onclick="verResultados()">Ver Resultados</button>
+
+    <div id="mensagem"></div>
+    <div id="resultados"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
