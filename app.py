@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 from blockchain.blockchain import Blockchain
 from blockchain.voto import Voto
@@ -9,6 +9,17 @@ CORS(app)
 
 blockchain = Blockchain()
 controle = ControleEleitores()
+
+
+
+@app.route('/')
+def index():
+    return send_from_directory('frontend', 'index.html')
+
+
+@app.route('/frontend/<path:filename>')
+def frontend_static(filename):
+    return send_from_directory('frontend', filename)
 
 @app.route('/votar', methods=['POST'])
 def votar():
