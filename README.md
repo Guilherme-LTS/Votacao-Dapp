@@ -7,6 +7,7 @@ Este projeto é uma aplicação descentralizada (DApp) desenvolvida para fins ed
 Universidade Estadual do Amazonas – Escola Superior de Tecnologia (UEA-EST)
 
 ## 👨‍💻 Integrantes
+- Guilherme Lucas Teixeira Silva  
 - Gabriel Pepes Moda  
 - Guilherme Santos da Silva  
 
