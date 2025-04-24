@@ -1,42 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  input, select, button {
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  #mensagem {
-    margin-top: 15px;
-    font-weight: bold;
-    color: green;
-  }
-  
-  #resultados {
-    margin-top: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#mensagem {
+  margin-top: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+#resultados {
+  margin-top: 20px;
+  background: #eee;
+  padding: 15px;
+  border-radius: 5px;
+}

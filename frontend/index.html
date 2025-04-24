@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Votação DApp</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/frontend/style.css">
 </head>
 <body>
   <div class="container">
     <h1>Sistema de Votação Descentralizado</h1>
-    
+
     <div class="form">
       <input type="text" id="eleitor_id" placeholder="Seu ID de Eleitor">
       <select id="candidato">
@@ -21,11 +21,17 @@
 
     <button onclick="minerar()">Minerar Bloco</button>
     <button onclick="verResultados()">Ver Resultados</button>
+    <button onclick="sincronizar()">Sincronizar Cadeia</button>
+
+    <div class="form">
+      <input type="text" id="node_url" placeholder="URL do novo nó (ex: http://localhost:5001)">
+      <button onclick="registrarNo()">Registrar Nó</button>
+    </div>
 
     <div id="mensagem"></div>
     <div id="resultados"></div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="/frontend/script.js"></script>
 </body>
 </html>
